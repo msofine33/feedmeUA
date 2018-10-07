@@ -2,8 +2,11 @@
   "name": "feedmeua",
   "version": "0.0.1",
   "description": "presentation feedback client",
+  "engines": {
+    "node": "8.x.x"
+  },
   "scripts": {
-    "start": "node main.js"
+    "start": "node app.js"
     "test": "npm rum system-test"
   },
   "repository": {
