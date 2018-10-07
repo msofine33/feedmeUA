@@ -1,3 +1,5 @@
+'use strict';
+
 // [START gae_node_request_example]
 const express = require('express');
 
