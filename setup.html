@@ -1,0 +1,102 @@
+<html>
+<style>
+.left {
+    background-color: white;
+    float: left;
+    width: 50%;
+}
+.right {
+    background-color: white;
+    margin-left: 50%;
+}
+</style>
+<head>
+FeedmeUA
+</head>
+<center>
+<h1><b>
+    Feed Me UA
+</b></h1>
+<h1>Feed Me Setup</h1>
+<p>Set number of speakers + generate seminar code</p>
+<div class="left">
+<h>Please select the number of speakers presenting</h>
+
+<p><select id="nbr_speakers"></p>
+  <option value=""> - Select - </option>
+  <option value="0">1 Speaker</option>
+  <option value="1">2 Speaker</option>
+  <option value="2">3 Speaker</option>
+  <option value="3">4 Speaker</option>
+  <option value="4">5 Speaker</option>
+  <option value="5">6 Speaker</option>
+  <option value="6">7 Speaker</option>
+  <option value="7">8 Speaker</option>
+  <option value="8">9 Speaker</option>
+  <option value="9">10 Speaker</option>
+</select>
+
+<button onclick="myFunction()">Comfirm</button>
+<p id="demo"></p>
+<script>
+var speakers = 0;
+var speaker1 = 0;
+var spekaer2 = 0;
+var speaker3 = 0;
+var speaker4 = 0;
+var speaker5 = 0;
+var speaker6 = 0;
+var speaker7 = 0;
+var speaker8 = 0;
+var speaker9 = 0;
+
+function myFunction() {
+  var getValue = document.getElementById("nbr_speakers").value;
+  var speakers =  getValue -1 + 2;
+  spkr_string();
+
+  function spkr_string(){
+  var max_spkr = "speaker" + speakers;
+  console.log(max_spkr);
+  spkr_set();
+
+  function spkr_set(){
+    var text = "";
+    var i = 1;
+      while (i <= speakers) {
+        text += "<br>Speaker "+i;
+        text += '<form><input type="text" id="'+i+'" name=""><br></form>';
+        i++;
+          }
+  document.getElementById("demo").innerHTML = text;
+  /*spkr_assign()*/
+
+  function spkr_assign(){
+
+  }
+          }
+        }
+      }
+</script>
+</div>
+<div class="right">
+<h>Generate Seminar Code</h>
+<p><button onclick="gsc()">Generate</button></p>
+<p id="connect"></p>
+
+
+<script>
+function gsc(){
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for( var i = 0; i < 6; i++ )
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+    document.getElementById("connect").innerHTML = "Your Seminar Code is: " + text;
+}
+
+</script>
+
+</center>
+</body>
+</html>
