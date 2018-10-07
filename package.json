@@ -2,11 +2,9 @@
   "name": "feedmeua",
   "version": "0.0.1",
   "description": "presentation feedback client",
-  "main": "index.js",
   "scripts": {
     "start": "node main.js"
-             }
-    "test": "?"
+    "test": "npm rum system-test"
   },
   "repository": {
     "type": "git",
