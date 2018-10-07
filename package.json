@@ -1,17 +1,18 @@
 {
   "name": "feedmeua",
-  "version": "0.0.1",
-  "description": "presentation feedback client",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "presentation feedback",
+  "main": "app.js",
   "scripts": {
-    "test": "?"
+    "start": "node app.js",
+    "test": "npm run system-test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/msofine33/feedmeUA.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/msofine33/feedmeUA/issues"
   },
