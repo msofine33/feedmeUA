@@ -2,12 +2,9 @@
   "name": "feedmeua",
   "version": "0.0.1",
   "description": "presentation feedback client",
-  "engines": {
-    "node": "8.x.x"
-  },
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
-    "test": "npm rum system-test"
+    "test": "?"
   },
   "repository": {
     "type": "git",
@@ -18,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/msofine33/feedmeUA/issues"
   },
-  "homepage": "https://github.com/msofine33/feedmeUA#readme"
+  "homepage": "https://github.com/msofine33/feedmeUA#readme",
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
 }
